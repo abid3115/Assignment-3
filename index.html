@@ -9,6 +9,7 @@
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Tailwind Custom Color -->
     <script>
@@ -37,10 +38,10 @@
 
 <body class="font-lato">
     <header>
-        <nav class="lg:md:my-14 lg:mx-32 md:mx-12">
+        <nav class="my-14 lg:mx-32">
             <div class="navbar lg:bg-red-500 rounded-full">
-                <div class="navbar-start">
-                  <ul class="dropdown lg:flex lg:gap-4 lg:pl-14 font-medium text-sm  text-white">
+                <div class="navbar-start hidden lg:flex">
+                  <ul class="lg:flex lg:gap-4 lg:pl-14 font-medium text-sm text-black lg:text-white">
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Shop</a></li>
@@ -51,9 +52,9 @@
                    <img class="h-14 w-14" src="./images/logo.png" alt="">
                    <h3 class="mx-2 text-4xl font-bold  lg:text-white">Fruit Burst</h3>
                 </div> 
-                <div class="navbar-end pr-10 flex">
+                <div class="navbar-end hidden lg:flex pr-10">
                     <div class="lg:form-control ">
-                        <div class="lg:md:form-control">
+                        <div class="form-control">
                           <input type="text" placeholder="Search here" class="input input-bordered rounded-full w-80" />
                         </div> 
                       </div> 
@@ -63,6 +64,21 @@
                 </div>
               </div>
         </nav>
+        <nav>
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+        </nav>
+
     </header>
     <main>
 
